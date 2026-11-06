@@ -76,7 +76,7 @@ jobs:
           targets: aarch64-pc-windows-msvc
       # The runner account can't write to Program Files: the .NET SDK and WiX go into the runner's own
       # tool cache.
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         env:
           DOTNET_INSTALL_DIR: ${{ runner.tool_cache }}\dotnet
         with:
