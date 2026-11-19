@@ -16,7 +16,7 @@ serde = { workspace = true }
 quick-xml = { workspace = true }
 chrono = { workspace = true }
 # `brob` (Brotli-wrapped) JPEG XL metadata boxes
-brotli-decompressor = { version = "5", default-features = false, features = ["std"] }
+brotli-decompressor = { version = "6", default-features = false, features = ["std"] }
 
 [dev-dependencies]
 proptest = { workspace = true }
@@ -26,4 +26,4 @@ serde_json = { workspace = true }
 # Lossless synthetic HEIF files for the container reader's tests.
 lcc-heif = { workspace = true, features = ["testdata"] }
 # Brotli-wrapped (`brob`) JPEG XL metadata boxes in test fixtures
-brotli = { version = "8", default-features = false, features = ["std"] }
+brotli = { version = "9", default-features = false, features = ["std"] }
